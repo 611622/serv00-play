@@ -654,7 +654,7 @@ startSingBox(){
   
   
   if [[ ! -e serv00sb ]] || [[ $(file serv00sb) == *"text"* ]]; then
-    echo "123"
+    echo "downloading serv00sb..."
     url="https://gfg.fkjdemo.us.kg/app/serv00/serv00sb?pwd=$password"
     curl -L -sS --max-time 10 -o serv00sb "$url"
     if file serv00sb | grep "text" ; then
